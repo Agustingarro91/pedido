@@ -1,0 +1,143 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--Pale-blue);
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+
+.card {
+  background-color: var(--Very-pale-blue);
+  width: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 10px rgba(153, 153, 153, 0.315);
+          box-shadow: 10px 10px 10px rgba(153, 153, 153, 0.315);
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-body p {
+  font-size: 1.6rem;
+  margin: 0 5rem;
+  text-align: center;
+}
+
+.card-medium {
+  background-color: var(--Pale-blue);
+  font-size: 1.6rem;
+  margin: 2rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-medium p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card-medium a {
+  padding: 10px;
+}
+
+.card-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-boton a {
+  padding: 10px;
+  margin: 0.3rem 5rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-boton a:hover {
+  background: var(--Desaturated-blue);
+}
+
+.card-boton-blue {
+  background-color: var(--Bright-blue);
+  color: white;
+}
+
+.card-boton-white {
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 330px;
+  }
+  .card-body h1 {
+    font-size: 15px;
+  }
+  .card-body p {
+    font-size: 11px;
+  }
+  .card-medium {
+    font-size: 11px;
+  }
+  .card-boton a {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
