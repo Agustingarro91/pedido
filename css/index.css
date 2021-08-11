@@ -20,6 +20,7 @@ html {
 body {
   font-family: 'Red Hat Display', sans-serif;
   background-color: var(--Pale-blue);
+  font-size: 1.6rem;
 }
 
 .general {
@@ -62,14 +63,12 @@ body {
 }
 
 .card-body p {
-  font-size: 1.6rem;
   margin: 0 5rem;
   text-align: center;
 }
 
 .card-medium {
   background-color: var(--Pale-blue);
-  font-size: 1.6rem;
   margin: 2rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +104,6 @@ body {
   padding: 10px;
   margin: 0.3rem 5rem;
   text-decoration: none;
-  font-size: 1.6rem;
   border-radius: 10px;
   text-align: center;
 }
@@ -124,20 +122,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    font-size: 1.1rem;
+  }
   .card {
     width: 330px;
-  }
-  .card-body h1 {
-    font-size: 15px;
-  }
-  .card-body p {
-    font-size: 11px;
-  }
-  .card-medium {
-    font-size: 11px;
-  }
-  .card-boton a {
-    font-size: 11px;
   }
 }
 /*# sourceMappingURL=index.css.map */
